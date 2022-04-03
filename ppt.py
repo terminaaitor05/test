@@ -1,20 +1,19 @@
 import random
 
-def play(user, computer):
+def play():
     user = input("Elige piedra, 'r', papel, 'p', o tijera, 't'")
     computer = random.choice(['r', 'p', 't'])
 
     if user == computer:
         return 'Empate'
     
-    elif is_win:
+    if is_win(user, computer):
         return 'Ganaste'
 
-    else:
-        return 'Perdiste'
+    return 'Perdiste'
 
-def is_win(player, opponent):
-    if (player == 'r' and opponent == 'p') or (player == 'p' and opponent == 't') or (player == 't' and opponent == 'r'):
+def is_win(user, computer):
+    if (user == 'r' and computer == 'p') or (user == 'p' and computer == 't') or (user == 't' and computer == 'r'):
         return True
-    else:
-        return False
+
+print(play())
