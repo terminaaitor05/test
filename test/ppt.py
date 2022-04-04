@@ -16,4 +16,4 @@ def is_win(user, computer):
     if (user == 'r' and computer == 'p') or (user == 'p' and computer == 't') or (user == 't' and computer == 'r'):
         return True
 
-print(play())
+# print(play())

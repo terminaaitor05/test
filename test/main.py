@@ -4,8 +4,11 @@ import test
 def main():
     input("Elige a qué quieres jugar: piedra, papel o tijera 'p', o adivina el número 'n': ")	
     if input == 'p':
-        ppt.my_function()
+        ppt.play()
     else:
-        test.my_function()
+        test.play()
 
-print(main())
+# print(main())
+
+if __name__ == "__main__":
+    main()
