@@ -2,13 +2,15 @@ import ppt
 import test
 
 def main():
-    input("Elige a qué quieres jugar: piedra, papel o tijera 'p', o adivina el número 'n': ")	
-    if input == 'p':
-        ppt.my_function()
+    ans = input("Elige a qué quieres jugar: piedra, papel o tijera 'p', o adivina el número 'n': ")	
+    if ans == 'p':
+        ppt.play()
     else:
-        test.my_function()
+        test.guess(10)
 
 # print(main())
 
 if __name__ == "__main__":
+  main()
+  while input("Wanna play again? 'y'/'n': ") == "y":  
     main()

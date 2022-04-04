@@ -12,4 +12,4 @@ def guess(x):
         else:
             print("You guessed it!")
 
-guess(10)
+#guess(10)
