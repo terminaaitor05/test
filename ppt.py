@@ -5,12 +5,13 @@ def play():
     computer = random.choice(['r', 'p', 't'])
 
     if user == computer:
-        return 'Empate'
+        print('Empate')
     
-    if is_win(user, computer):
-        return 'Ganaste'
+    elif is_win(user, computer):
+        print('Ganaste')
 
-    return 'Perdiste'
+    else:
+        print('Perdiste')
 
 def is_win(user, computer):
     if (user == 'r' and computer == 'p') or (user == 'p' and computer == 't') or (user == 't' and computer == 'r'):
