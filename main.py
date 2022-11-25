@@ -10,8 +10,6 @@ def main():
     else:
         break
 
-# print(main())
-
 if __name__ == "__main__":
   main()
   while input("Wanna play again? 'y'/'n': ") == "y":  
