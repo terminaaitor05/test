@@ -5,8 +5,10 @@ def main():
     ans = input("Elige a qué quieres jugar: piedra, papel o tijera 'p', o adivina el número 'n': ")	
     if ans == 'p':
         ppt.play()
-    else:
+    elif ans == 'n':
         test.guess(10)
+    else:
+        break
 
 # print(main())
 
