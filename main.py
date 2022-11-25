@@ -6,7 +6,7 @@ def main():
     if ans == 'p':
         ppt.play()
     elif ans == 'n':
-        test.guess(10)
+        rnumb.guess(10)
     else:
         break
 
