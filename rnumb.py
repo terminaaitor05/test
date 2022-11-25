@@ -11,5 +11,3 @@ def guess(x):
             print("Too low!")
         else:
             print("You guessed it!")
-
-#guess(10)
